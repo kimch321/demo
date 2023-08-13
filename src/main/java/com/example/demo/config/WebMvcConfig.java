@@ -14,7 +14,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 // Origin이 http:localhost:3000에 대해.
                 .allowedOrigins("http://localhost:3000",
-                        "http://kimch321-prod-todo-ui-service.ap-northeast-2.elasticbeanstalk.com")
+                        "http://kimch321-prod-todo-ui-service.ap-northeast-2.elasticbeanstalk.com",
+                        "https://app.kimch321project.com")
                 // GET, POST, PUT, PATCH, DELETE, OPTIONS 메서드를 허용한다.
                 .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
